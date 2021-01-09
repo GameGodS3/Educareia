@@ -9,7 +9,6 @@ body {
   color: #ffffff;
   padding: 0;
   margin: 0;
-  font-family: rahulmono;
 }
 
 .header {
@@ -110,6 +109,8 @@ body {
   border-radius: 15px 15px 0 0;
   z-index: 0;
   opacity: 0.8;
+  -webkit-filter: brightness(100%);
+          filter: brightness(100%);
 }
 
 .progress .progress-container .progress-card .progress-bar {
@@ -130,8 +131,9 @@ body {
   padding: 0 1rem 1rem 1rem;
   height: 4rem;
   text-align: center;
-  -webkit-transition: 1s all ease;
-  transition: 1s all ease;
+  opacity: 1;
+  -webkit-transition: opacity 1s ease;
+  transition: opacity 1s ease;
 }
 
 .progress .progress-container .progress-card .on-hover {
@@ -150,9 +152,10 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 15px;
+  opacity: 0;
   display: none;
-  -webkit-transition: 1s all ease;
-  transition: 1s all ease;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
 .progress .progress-container .progress-card .on-hover .course-title-hover {
@@ -205,6 +208,13 @@ body {
   box-shadow: 0px 3px 16px 1px rgba(0, 0, 0, 0.68);
 }
 
+.progress .progress-container .progress-card:hover img {
+  -webkit-filter: brightness(40%);
+          filter: brightness(40%);
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+
 .progress .progress-container .progress-card:hover .progress-bar {
   display: none;
 }
@@ -213,9 +223,11 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  opacity: 1;
 }
 
 .progress .progress-container .progress-card:hover .course-title {
   display: none;
+  opacity: 0;
 }
 /*# sourceMappingURL=style.css.map */

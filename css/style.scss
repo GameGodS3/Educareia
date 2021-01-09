@@ -10,7 +10,6 @@ body{
     color: #ffffff;
     padding: 0;
     margin: 0;
-    font-family: rahulmono;
 }
 
 .header{
@@ -86,6 +85,8 @@ body{
                 border-radius: 15px 15px 0 0;
                 z-index: 0;
                 opacity: 0.8;
+                filter: brightness(100%); 
+                
             }
 
             .progress-bar{
@@ -107,7 +108,8 @@ body{
                 padding: 0 1rem 1rem 1rem;
                 height: 4rem;
                 text-align: center;
-                transition: 1s all ease;
+                opacity: 1;
+                transition: opacity 1s ease;
             }
 
             .on-hover{
@@ -117,8 +119,10 @@ body{
                 padding: 0 20px;
                 align-items: center;
                 margin-bottom: 15px;
+                opacity: 0;
                 display: none;
-                transition: 1s all ease;
+                transition: all 1s ease;
+
                 .course-title-hover{
                     position: absolute;
                     bottom: 130px;
@@ -177,15 +181,23 @@ body{
             
 
             &:hover{
+
+                img{
+                    filter: brightness(40%);
+                    transition: all 0.6s ease;
+                }
+                
                 .progress-bar{
                     display: none;
 
                 }
                 .on-hover{
                     display: flex;
+                    opacity: 1;
                 }
                 .course-title{
                     display: none;
+                    opacity: 0;
                 }
             }
         }
