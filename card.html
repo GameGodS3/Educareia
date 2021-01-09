@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress card</title>
+</head>
+<body>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #1d2d50;
+            height: 100vh;
+            font-family: "Hind Guntur";
+        }
+        .card{
+            background-color: #1e5f74;
+            width: 24rem;
+            height: 16rem;
+            border-radius: 15px;
+            color: #ffffff;
+        }
+        .courseimg{
+            background-image: url("./dev2.jpeg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: bottom;
+            display: block;
+            height: 70%;
+            clip-path: inset(.00001px round 15px 15px 0 0 );
+        }
+        .card-title{
+            font-weight: bold;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-size: 1.5rem;
+            padding: 0 2rem;
+            height: 30%;
+        }
+        .card-author, .continue{
+            display:none;
+        }
+
+    </style>
+    <div class="card">
+        <div class="courseimg"></div>
+        <div class="progressbar"></div>
+        <div class="card-title">
+            React - The Complete Guide (incl Hooks, React Router, Redux)
+        </div>
+        <div class="card-author">
+            Maximilian Schwarzmüller
+        </div>
+        <div class="continue">
+            Continue
+        </div>
+    </div>
+</body>
+</html>
