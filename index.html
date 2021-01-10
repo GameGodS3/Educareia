@@ -75,7 +75,7 @@
         <h1>Explore Top Courses</h1>
         <div class="category-filter">
             <button class="category active" data-filter="all">All</button>
-            <button class="category" data-filter="Developement">Developement</button>
+            <button class="category" data-filter="Developement">Development</button>
             <button class="category" data-filter="Design">Design</button>
             <button class="category" data-filter="Marketing">Marketing</button>
             <button class="category" data-filter="Business">Business</button>
@@ -107,7 +107,7 @@
                         ${discount} off!
                     </div>
                     <div class="content">
-                        <h1 class="title">
+                        <h1 class="title" title="${i.Name}">
                             ${i.Name}
                         </h1>
                         <div class="rating">
@@ -142,7 +142,6 @@
 
             for (let i=0; i<totalFilterBtn; i++){
                 filterBtns[i].addEventListener('click', function(){
-                console.log("clicked")
                 filterContainer.querySelector(".active").classList.remove("active");
                 this.classList.add("active");
 
@@ -154,6 +153,8 @@
                         console.log('a')
                     }
                     else {
+                        portfolioItems[k].classList.remove("hide")
+                        portfolioItems[k].classList.add("show")
                         portfolioItems[k].classList.remove("show")
                         portfolioItems[k].classList.add("hide")
                         console.log('b')

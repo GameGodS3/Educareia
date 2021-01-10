@@ -12,7 +12,7 @@
         margin-right: 10px;
         border-radius: 50px;
         cursor: pointer;
-        background-color: #277691;
+        background-color: var(--ter);
         color: #fff;
         outline: none;
         border: none;
@@ -20,12 +20,12 @@
             font-size: 13px;
         } 
         &:hover{
-            background-color: #1e5f74
+            background-color: #1e5f74be;
         }
     }
     .active{
         background-color: #fff;
-        color: #277691;
+        color: #1e5f74be;
         &:hover{
             background-color: #ffffffd3;
         }
@@ -45,7 +45,7 @@
         
         .course{
             
-            background-color: #1e5f74;
+            background-color: var(--ter);
             border-radius: 20px;
             display: grid;
             grid-template-columns: 1fr 1fr;       
@@ -83,7 +83,7 @@
             }
         }
         .content{
-            background-color: #1e5f74;
+            background-color: var(--ter);
             border-radius: 0 20px 20px 0 ;
             padding: 10px;
 
@@ -114,7 +114,8 @@
                 font-size: 30px;
 
                 .original-price{
-                    color: #8da9b3;
+                    color: var(--acc);
+                    opacity: .7;
                     font-weight: 100;
                     font-size: 20px;
                     text-decoration: line-through;
@@ -125,18 +126,18 @@
                 font-family: 'Hind Guntur';
                 font-weight: 100;
                 font-size: 13px;
-                color: #fcdab7;
+                color: var(--acc);
                 i{
                     font-size: 12px;
-                    color: #fcdab7;
+                    color: var(--acc);
                     
                 }
             }
 
             .buy{
                 font-family: 'Hind Guntur';
-                background-color: #fcdab7;
-                color: #133b5c;
+                background-color: var(--acc);
+                color: var(--sec);
                 padding: 8px 15px;
                 height: 40px;
                 font-size: 16px;

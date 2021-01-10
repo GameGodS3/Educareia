@@ -6,10 +6,14 @@
 }
 html {
     scroll-behavior: smooth;
+    --pri:#1d2d50;
+    --sec:#133b5c;
+    --ter:#1e5f74;
+    --acc:#fcdab7;
 }
 
 body{
-    background-color: #1d2d50;
+    background-color: var(--pri);
     color: #ffffff;
     padding: 0;
     margin: 0;
@@ -20,7 +24,7 @@ body{
     position: sticky;
     top: 0px;
     height: 14vh;
-    background-color: #133b5c;
+    background-color: var(--sec);
     padding: 0 30px;
     display: flex;
     flex-direction: row;
@@ -31,7 +35,7 @@ body{
         justify-content: center;
         align-items: center;
         font-family: 'Montserrat', sans-serif;
-        color: #fcdab7;
+        color: var(--acc);
         font-size: 55px;
     }
     ul{ 
@@ -51,9 +55,9 @@ body{
             transition: all 0.2s ease;
             padding: 15px 30px;
             font-size: 16px;
-            color: #fcdab7;
+            color: var(--acc);
             font-style: italic;
-            font-weight: 300;
+            font-weight: bold;
 
             
             &:hover{
@@ -61,16 +65,16 @@ body{
             }
         }
         .get-started{
-            background-color: #277691;
+            background-color: var(--ter);
             font-weight: bolder;
             font-size: 16px;
-            color: #fcdab7;
+            color: var(--acc);
             border-radius: 25px;
             padding: 15px 15px ;
 
             &:hover{
 
-                background-color: #1e5f74;
+                background-color: #1e5f74be;
             }
 
             span{
@@ -106,7 +110,7 @@ body{
                 
         }
         .progress-card{
-            background-color: #1e5f74;
+            background-color: var(--ter);
             height: auto;
             border-radius: 15px;
             font-family: "Hind Guntur";
@@ -215,7 +219,7 @@ body{
                 }
                 .continue{
                     button{
-                        background-color: #133b5c;
+                        background-color: var(--sec);
                         color: #fff;
                         padding: 10px 20px;
                         font-size: 20px;
@@ -283,10 +287,9 @@ body{
 
     
     .content{
-        color: #fcdab7;
+        color: var(--acc);
         h1{
-            font-family: 'Expletus Sans', sans-serif;
-            font-style: italic;
+            font-family: 'Hind Guntur', sans-serif;
             line-height: 4rem;
             font-size: 60px;
             @media(max-width: 676px){
@@ -300,7 +303,7 @@ body{
             font-weight: lighter;
             color: #fff;
             padding: 20px 0;
-            line-height: 1rem;
+            line-height: 1.5rem;
             width: 70%;
             @media(max-width: 676px){
                 width: auto;
@@ -311,10 +314,10 @@ body{
                 outline: none;
                 border: none;
                 cursor: pointer;
-                background-color: #277691;
+                background-color: var(--ter);
                 font-weight: bolder;
                 font-size: 16px;
-                color: #fcdab7;
+                color: var(--acc);
                 border-radius: 25px;
                 padding: 15px 15px ;
                 @media(max-width: 676px){
@@ -323,7 +326,7 @@ body{
                 }
                 &:hover{
     
-                    background-color: #1e5f74;
+                    background-color: #1e5f74be;
                 }
     
                 span{
@@ -332,15 +335,15 @@ body{
                
         }
         .get-started-course{
-            background-color: #fcdab7;
+            background-color: transparent;
             font-weight: bolder;
             font-size: 16px;
-            color: #277691;
+            color: var(--acc);
             border-radius: 25px;
-            padding: 15px 15px ;
+            padding: 15px ;
 
             &:hover{
-                background-color: #dab693;
+                background-color: var(--sec);
             }
         }
 

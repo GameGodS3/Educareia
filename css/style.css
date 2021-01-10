@@ -6,10 +6,14 @@
 
 html {
   scroll-behavior: smooth;
+  --pri:#1d2d50;
+  --sec:#133b5c;
+  --ter:#1e5f74;
+  --acc:#fcdab7;
 }
 
 body {
-  background-color: #1d2d50;
+  background-color: var(--pri);
   color: #ffffff;
   padding: 0;
   margin: 0;
@@ -21,7 +25,7 @@ body {
   position: sticky;
   top: 0px;
   height: 14vh;
-  background-color: #133b5c;
+  background-color: var(--sec);
   padding: 0 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -46,7 +50,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   font-family: 'Montserrat', sans-serif;
-  color: #fcdab7;
+  color: var(--acc);
   font-size: 55px;
 }
 
@@ -75,9 +79,9 @@ body {
   transition: all 0.2s ease;
   padding: 15px 30px;
   font-size: 16px;
-  color: #fcdab7;
+  color: var(--acc);
   font-style: italic;
-  font-weight: 300;
+  font-weight: bold;
 }
 
 .header ul li:hover {
@@ -85,16 +89,16 @@ body {
 }
 
 .header ul .get-started {
-  background-color: #277691;
+  background-color: var(--ter);
   font-weight: bolder;
   font-size: 16px;
-  color: #fcdab7;
+  color: var(--acc);
   border-radius: 25px;
   padding: 15px 15px;
 }
 
 .header ul .get-started:hover {
-  background-color: #1e5f74;
+  background-color: #1e5f74be;
 }
 
 .header ul .get-started span {
@@ -128,7 +132,7 @@ body {
 }
 
 .progress .progress-container .progress-card {
-  background-color: #1e5f74;
+  background-color: var(--ter);
   height: auto;
   border-radius: 15px;
   font-family: "Hind Guntur";
@@ -256,7 +260,7 @@ body {
 }
 
 .progress .progress-container .progress-card .on-hover .continue button {
-  background-color: #133b5c;
+  background-color: var(--sec);
   color: #fff;
   padding: 10px 20px;
   font-size: 20px;
@@ -325,12 +329,11 @@ body {
 }
 
 .main .content {
-  color: #fcdab7;
+  color: var(--acc);
 }
 
 .main .content h1 {
-  font-family: 'Expletus Sans', sans-serif;
-  font-style: italic;
+  font-family: 'Hind Guntur', sans-serif;
   line-height: 4rem;
   font-size: 60px;
 }
@@ -347,7 +350,7 @@ body {
   font-weight: lighter;
   color: #fff;
   padding: 20px 0;
-  line-height: 1rem;
+  line-height: 1.5rem;
   width: 70%;
 }
 
@@ -362,10 +365,10 @@ body {
   outline: none;
   border: none;
   cursor: pointer;
-  background-color: #277691;
+  background-color: var(--ter);
   font-weight: bolder;
   font-size: 16px;
-  color: #fcdab7;
+  color: var(--acc);
   border-radius: 25px;
   padding: 15px 15px;
 }
@@ -377,7 +380,7 @@ body {
 }
 
 .main .content button:hover {
-  background-color: #1e5f74;
+  background-color: #1e5f74be;
 }
 
 .main .content button span {
@@ -385,16 +388,16 @@ body {
 }
 
 .main .content .get-started-course {
-  background-color: #fcdab7;
+  background-color: transparent;
   font-weight: bolder;
   font-size: 16px;
-  color: #277691;
+  color: var(--acc);
   border-radius: 25px;
-  padding: 15px 15px;
+  padding: 15px;
 }
 
 .main .content .get-started-course:hover {
-  background-color: #dab693;
+  background-color: var(--sec);
 }
 
 .main .image {
@@ -442,7 +445,7 @@ body {
   margin-right: 10px;
   border-radius: 50px;
   cursor: pointer;
-  background-color: #277691;
+  background-color: var(--ter);
   color: #fff;
   outline: none;
   border: none;
@@ -455,12 +458,12 @@ body {
 }
 
 .explore .category:hover {
-  background-color: #1e5f74;
+  background-color: #1e5f74be;
 }
 
 .explore .active {
   background-color: #fff;
-  color: #277691;
+  color: #1e5f74be;
 }
 
 .explore .active:hover {
@@ -484,7 +487,7 @@ body {
 }
 
 .explore .cards-container .course {
-  background-color: #1e5f74;
+  background-color: var(--ter);
   border-radius: 20px;
   display: -ms-grid;
   display: grid;
@@ -529,7 +532,7 @@ body {
 }
 
 .explore .cards-container .content {
-  background-color: #1e5f74;
+  background-color: var(--ter);
   border-radius: 0 20px 20px 0;
   padding: 10px;
 }
@@ -564,7 +567,8 @@ body {
 }
 
 .explore .cards-container .content .price .original-price {
-  color: #8da9b3;
+  color: var(--acc);
+  opacity: .7;
   font-weight: 100;
   font-size: 20px;
   text-decoration: line-through;
@@ -574,18 +578,18 @@ body {
   font-family: 'Hind Guntur';
   font-weight: 100;
   font-size: 13px;
-  color: #fcdab7;
+  color: var(--acc);
 }
 
 .explore .cards-container .content .enrolled i {
   font-size: 12px;
-  color: #fcdab7;
+  color: var(--acc);
 }
 
 .explore .cards-container .content .buy {
   font-family: 'Hind Guntur';
-  background-color: #fcdab7;
-  color: #133b5c;
+  background-color: var(--acc);
+  color: var(--sec);
   padding: 8px 15px;
   height: 40px;
   font-size: 16px;
