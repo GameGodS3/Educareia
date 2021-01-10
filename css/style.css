@@ -101,12 +101,6 @@ body {
   color: #fff;
 }
 
-@media (max-width: 676px) {
-  .header {
-    display: none;
-  }
-}
-
 .progress {
   margin-top: 20px;
   padding: 0 30px;
@@ -309,6 +303,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 85%;
   margin: auto;
 }
@@ -318,6 +315,11 @@ body {
     width: 90%;
     min-height: auto;
   }
+}
+
+.main .content {
+  margin-left: 30px;
+  color: #fcdab7;
 }
 
 .main .content h1 {
@@ -375,7 +377,6 @@ body {
 .main .image img {
   width: 30rem;
   height: 20rem;
-  border-radius: 50%;
 }
 
 @media (max-width: 676px) {
@@ -406,6 +407,12 @@ body {
   border: none;
 }
 
+@media (max-width: 676px) {
+  .explore .category {
+    font-size: 13px;
+  }
+}
+
 .explore .cards-container {
   margin-top: 30px;
   display: -ms-grid;
@@ -432,6 +439,13 @@ body {
   position: relative;
 }
 
+@media (max-width: 676px) {
+  .explore .cards-container .course {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
 .explore .cards-container .course .image {
   height: 18rem;
 }
@@ -442,6 +456,12 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 20px 0 0 20px;
+}
+
+@media (max-width: 676px) {
+  .explore .cards-container .course .image img {
+    border-radius: 20px 20px 0 0;
+  }
 }
 
 .explore .cards-container .course .discount {
@@ -520,11 +540,25 @@ body {
       grid-template-columns: 2fr 1.5fr;
 }
 
+@media (max-width: 676px) {
+  .login-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    min-height: 100vh;
+  }
+}
+
 .login-container .image img {
   width: 100%;
   height: 100vh;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media (max-width: 676px) {
+  .login-container .image {
+    display: none;
+  }
 }
 
 .login-container .login {
@@ -549,6 +583,12 @@ body {
   color: #fcdab7;
 }
 
+@media (max-width: 676px) {
+  .login-container .login h1 {
+    display: none;
+  }
+}
+
 .login-container .login .form {
   background-color: #133b5c;
   width: 40%;
@@ -558,6 +598,25 @@ body {
   padding: 30px  30px;
   text-align: left;
   position: relative;
+}
+
+@media (max-width: 676px) {
+  .login-container .login .form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-item-align: center;
+        align-self: center;
+    margin: auto;
+    width: 60%;
+  }
 }
 
 .login-container .login h2 {
