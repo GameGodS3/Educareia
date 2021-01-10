@@ -6,15 +6,16 @@
 
 html {
   scroll-behavior: smooth;
-  --pri:#1d2d50;
-  --sec:#133b5c;
-  --ter:#1e5f74;
-  --acc:#fcdab7;
+  --pri:#E5E3E7;
+  --sec:#8A8988;
+  --ter:#5F8ACE;
+  --darkacc:#6E6C7E;
+  --acc:#273758;
 }
 
 body {
   background-color: var(--pri);
-  color: #ffffff;
+  color: var(--darkacc);
   padding: 0;
   margin: 0;
 }
@@ -85,7 +86,7 @@ body {
 }
 
 .header ul li:hover {
-  color: #fff;
+  color: var(--darkacc);
 }
 
 .header ul .get-started {
@@ -102,7 +103,7 @@ body {
 }
 
 .header ul .get-started span {
-  color: #fff;
+  color: var(--darkacc);
 }
 
 .progress {
@@ -136,7 +137,7 @@ body {
   height: auto;
   border-radius: 15px;
   font-family: "Hind Guntur";
-  color: #ffffff;
+  color: var(--darkacc);
   position: relative;
 }
 
@@ -261,7 +262,7 @@ body {
 
 .progress .progress-container .progress-card .on-hover .continue button {
   background-color: var(--sec);
-  color: #fff;
+  color: var(--darkacc);
   padding: 10px 20px;
   font-size: 20px;
   outline: none;
@@ -348,7 +349,7 @@ body {
   font-size: 16px;
   font-family: 'Hind Guntur', sans-serif;
   font-weight: lighter;
-  color: #fff;
+  color: var(--darkacc);
   padding: 20px 0;
   line-height: 1.5rem;
   width: 70%;
@@ -384,7 +385,7 @@ body {
 }
 
 .main .content button span {
-  color: #fff;
+  color: var(--darkacc);
 }
 
 .main .content .get-started-course {
@@ -613,7 +614,7 @@ body {
 }
 
 body {
-  background-color: #1d2d50;
+  background-color: var(--pri);
 }
 
 .login-container {
@@ -679,7 +680,7 @@ body {
 .login-container .login h1 {
   font-size: 40px;
   font-family: 'Montserrat';
-  color: #fcdab7;
+  color: var(--acc);
 }
 
 @media (max-width: 676px) {
