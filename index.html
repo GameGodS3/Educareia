@@ -47,8 +47,8 @@
         <ul>
             <a href="#"><li>Home</li></a>
             <a href="#explore"><li>Explore</li></a>
-            <a href="/login.html"><li>Login</li></a>
-            <a href="/signup.html"><li class="get-started">Join Now <span>- IT'S FREE</span></li></a>
+            <a href="./login.html"><li>Login</li></a>
+            <a href="./signup.html"><li class="get-started">Join Now</li></a>
         </ul>
     </div>
 
@@ -93,30 +93,30 @@
             let data = await res.json()
             document.querySelector(".cards-container").innerHTML = ''
             data.forEach(i => {
-                console.log(i.Name)
+                let rating = i.Rating;
+                rating = parseInt(rating);
+                let discount =i.Discount.slice(0, 3);
+                console.log(i.Name);
                 document.querySelector(".cards-container").innerHTML += `
                 <div class="course" data-category="${i.Category}">
                     <div class="image">
                         <img src="./images/${i.Image}.jpeg" alt="">
                     </div>
                     <div class="discount">
-                        96% off!
+                        ${discount} off!
                     </div>
                     <div class="content">
                         <h1 class="title">
                             ${i.Name}
                         </h1>
                         <div class="rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
+                            ` + '<i class="fa fa-star yellow-star"></i>'.repeat(rating) +
+                            '<i class="fa fa-star"></i>'.repeat(5-rating) + `
                         </div>
     
                         <div class="price">
-                            <span class="original-price">₹8640</span>
-                            ₹360
+                            <span class="original-price">₹${i.Discount.slice(-5, -1)}</span>
+                            ₹${i.Price}
                         </div>
     
                         <div class="enrolled">

@@ -222,8 +222,13 @@ body{
                         border: none;
                         border-radius: 20px;
                         cursor: pointer;
-                        -webkit-box-shadow: 0px 3px 16px 1px rgba(0, 0, 0, 0.68); 
-                        box-shadow:0px 3px 16px 1px rgba(0, 0, 0, 0.68);
+                        -webkit-box-shadow: 0px 3px 16px 1px rgba(0, 0, 0, 0.2); 
+                        box-shadow:0px 3px 16px 1px rgba(0, 0, 0, 0.2);
+                        &:hover{
+                            -webkit-box-shadow: 0px 3px 16px 1px rgba(0, 0, 0, 0.4); 
+                        box-shadow:0px 3px 16px 1px rgba(0, 0, 0, 0.4);
+                        transition: .25s;
+                        }
                     }
                 }
             }
@@ -277,25 +282,27 @@ body{
 
     
     .content{
-        margin-left: 30px;
         color: #fcdab7;
         h1{
-            font-family: sans-serif;
-            font-size: 70px;
+            font-family: 'Expletus Sans', sans-serif;
+            font-style: italic;
+            line-height: 4rem;
+            font-size: 60px;
             @media(max-width: 676px){
                 font-size: 45px;
                 
             }
         }
         p{
-            font-size: 20px;
-            font-family: sans-serif;
+            font-size: 16px;
+            font-family:'Hind Guntur', sans-serif ;
+            font-weight: lighter;
             padding: 20px 0;
-            line-height: 2;
+            line-height: 1rem;
             width: 70%;
             @media(max-width: 676px){
                 width: auto;
-                font-size: 16px;
+                font-size: 12px;
             }
         }
         button{
@@ -327,10 +334,11 @@ body{
     }
     
     .image{
-        
+        width: fit-content;
+        text-align: center;
         img{
-            width: 30rem;
-            height: 20rem;
+            max-width: 90%;
+            height: auto;
             
         }
         @media(max-width: 676px){
