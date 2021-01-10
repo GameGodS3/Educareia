@@ -345,6 +345,7 @@ body {
   font-size: 16px;
   font-family: 'Hind Guntur', sans-serif;
   font-weight: lighter;
+  color: #fff;
   padding: 20px 0;
   line-height: 1rem;
   width: 70%;
@@ -381,6 +382,19 @@ body {
 
 .main .content button span {
   color: #fff;
+}
+
+.main .content .get-started-course {
+  background-color: #fcdab7;
+  font-weight: bolder;
+  font-size: 16px;
+  color: #277691;
+  border-radius: 25px;
+  padding: 15px 15px;
+}
+
+.main .content .get-started-course:hover {
+  background-color: #dab693;
 }
 
 .main .image {
@@ -570,11 +584,12 @@ body {
 
 .explore .cards-container .content .buy {
   font-family: 'Hind Guntur';
-  background-color: #133b5c;
-  color: #fcdab7;
+  background-color: #fcdab7;
+  color: #133b5c;
   padding: 8px 15px;
   height: 40px;
   font-size: 16px;
+  font-weight: bold;
   outline: none;
   border: none;
   border-radius: 20px;
@@ -584,8 +599,6 @@ body {
   position: absolute;
   right: 10px;
   bottom: 10px;
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
 }
 
 .explore .cards-container .content .buy:hover {

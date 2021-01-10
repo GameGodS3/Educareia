@@ -135,11 +135,12 @@
 
             .buy{
                 font-family: 'Hind Guntur';
-                background-color: #133b5c;
-                color: #fcdab7;
+                background-color: #fcdab7;
+                color: #133b5c;
                 padding: 8px 15px;
                 height: 40px;
                 font-size: 16px;
+                font-weight: bold;
                 outline: none;
                 border: none;
                 border-radius: 20px;
@@ -149,7 +150,6 @@
                 position: absolute;
                 right: 10px;
                 bottom: 10px;
-                transform: scale(.9);
                 &:hover{
                     -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4); 
                     box-shadow:5px 5px 15px rgba(0, 0, 0, 0.4);
