@@ -508,4 +508,99 @@ body {
   right: 10px;
   bottom: 10px;
 }
+
+body {
+  background-color: #1d2d50;
+}
+
+.login-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1.5fr;
+      grid-template-columns: 2fr 1.5fr;
+}
+
+.login-container .image img {
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.login-container .login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  text-align: center;
+}
+
+.login-container .login h1 {
+  font-size: 40px;
+  font-family: 'Montserrat';
+  color: #fcdab7;
+}
+
+.login-container .login .form {
+  background-color: #133b5c;
+  width: 40%;
+  margin: auto;
+  margin-top: 30px;
+  border-radius: 20px;
+  padding: 30px  30px;
+  text-align: left;
+  position: relative;
+}
+
+.login-container .login h2 {
+  font-family: "Hind Guntur";
+  font-style: italic;
+}
+
+.login-container .login input {
+  padding: 5px 10px;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  width: 90%;
+  margin-bottom: 30px;
+}
+
+.login-container .login label {
+  color: #fcdab7;
+  font-size: 15px;
+  font-family: 'Hind Guntur';
+  font-weight: 100;
+}
+
+.login-container .login #forgot {
+  font-size: 13px;
+  font-family: 'Hind Guntur';
+  font-weight: 100;
+  color: #fcdab7;
+  text-align: right;
+  text-decoration: underline;
+}
+
+.login-container .login #login {
+  background-color: #133b5c;
+  color: #fcdab7;
+  padding: 8px 15px;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 3px 16px 1px rgba(0, 0, 0, 0.68);
+  box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.68);
+  margin-top: 10px;
+}
 /*# sourceMappingURL=style.css.map */
