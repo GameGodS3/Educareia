@@ -23,6 +23,13 @@
             background-color: #1e5f74
         }
     }
+    .active{
+        background-color: #fff;
+        color: #277691;
+        &:hover{
+            background-color: #ffffffd3;
+        }
+    }
     
    
 
