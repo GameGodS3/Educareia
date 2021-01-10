@@ -76,6 +76,29 @@ body {
   color: #fff;
 }
 
+.header ul .get-started {
+  background-color: #277691;
+  font-weight: bolder;
+  font-size: 16px;
+  color: #fcdab7;
+  border-radius: 25px;
+  padding: 15px 15px;
+}
+
+.header ul .get-started:hover {
+  background-color: #1e5f74;
+}
+
+.header ul .get-started span {
+  color: #fff;
+}
+
+@media (max-width: 676px) {
+  .header {
+    display: none;
+  }
+}
+
 .progress {
   margin-top: 20px;
   padding: 0 30px;
@@ -93,6 +116,13 @@ body {
   gap: 30px;
   margin-top: 30px;
   font-family: 'Hind Guntur', sans-serif;
+}
+
+@media (max-width: 676px) {
+  .progress .progress-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
 }
 
 .progress .progress-container .progress-card {
@@ -113,11 +143,25 @@ body {
           filter: brightness(100%);
 }
 
+@media (max-width: 676px) {
+  .progress .progress-container .progress-card img {
+    opacity: 1;
+    -webkit-filter: brightness(40%);
+            filter: brightness(40%);
+  }
+}
+
 .progress .progress-container .progress-card .progress-bar {
   height: 4px;
   background-color: #3eac3e;
   position: absolute;
   bottom: 72px;
+}
+
+@media (max-width: 676px) {
+  .progress .progress-container .progress-card .progress-bar {
+    display: none;
+  }
 }
 
 .progress .progress-container .progress-card .course-title {
@@ -133,6 +177,12 @@ body {
   opacity: 1;
   -webkit-transition: opacity 1s ease;
   transition: opacity 1s ease;
+}
+
+@media (max-width: 676px) {
+  .progress .progress-container .progress-card .course-title {
+    display: none;
+  }
 }
 
 .progress .progress-container .progress-card .on-hover {
@@ -155,6 +205,15 @@ body {
   display: none;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
+}
+
+@media (max-width: 676px) {
+  .progress .progress-container .progress-card .on-hover {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    opacity: 1;
+  }
 }
 
 .progress .progress-container .progress-card .on-hover .course-title-hover {
@@ -228,5 +287,217 @@ body {
 .progress .progress-container .progress-card:hover .course-title {
   display: none;
   opacity: 0;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  min-height: 80vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 85%;
+  margin: auto;
+}
+
+@media (max-width: 676px) {
+  .main {
+    width: 90%;
+    min-height: auto;
+  }
+}
+
+.main .content h1 {
+  font-family: sans-serif;
+  font-size: 70px;
+}
+
+@media (max-width: 676px) {
+  .main .content h1 {
+    font-size: 45px;
+  }
+}
+
+.main .content p {
+  font-size: 20px;
+  font-family: sans-serif;
+  padding: 20px 0;
+  line-height: 2;
+  width: 70%;
+}
+
+@media (max-width: 676px) {
+  .main .content p {
+    width: auto;
+    font-size: 16px;
+  }
+}
+
+.main .content button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: #277691;
+  font-weight: bolder;
+  font-size: 16px;
+  color: #fcdab7;
+  border-radius: 25px;
+  padding: 15px 15px;
+}
+
+@media (max-width: 676px) {
+  .main .content button {
+    font-size: 12px;
+  }
+}
+
+.main .content button:hover {
+  background-color: #1e5f74;
+}
+
+.main .content button span {
+  color: #fff;
+}
+
+.main .image img {
+  width: 30rem;
+  height: 20rem;
+  border-radius: 50%;
+}
+
+@media (max-width: 676px) {
+  .main .image {
+    display: none;
+  }
+}
+
+.explore {
+  margin-top: 20px;
+  padding: 0 30px;
+  font-family: 'Montserrat';
+}
+
+.explore h1 {
+  font-family: 'Expletus Sans', cursive;
+}
+
+.explore .category {
+  margin-top: 30px;
+  padding: 10px 20px;
+  font-size: 17px;
+  margin-right: 10px;
+  cursor: pointer;
+  background-color: #1e5f74;
+  color: #fff;
+  outline: none;
+  border: none;
+}
+
+.explore .cards-container {
+  margin-top: 30px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+@media (max-width: 676px) {
+  .explore .cards-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.explore .cards-container .course {
+  background-color: #1e5f74;
+  border-radius: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  position: relative;
+}
+
+.explore .cards-container .course .image {
+  height: 18rem;
+}
+
+.explore .cards-container .course .image img {
+  width: 100%;
+  height: 18rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px 0 0 20px;
+}
+
+.explore .cards-container .course .discount {
+  position: absolute;
+  background-color: #e96f6f;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  top: 5px;
+  left: 10px;
+}
+
+.explore .cards-container .content {
+  background-color: #1e5f74;
+  border-radius: 0 20px 20px 0;
+  padding: 10px;
+}
+
+.explore .cards-container .content h1.title {
+  font-size: 24px;
+  font-family: 'Hind Guntur', sans-serif;
+  font-weight: 300;
+  line-height: 1.3;
+}
+
+.explore .cards-container .content .price {
+  margin-top: 5px;
+  font-family: "Hind Guntur";
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.explore .cards-container .content .price .original-price {
+  color: #8da9b3;
+  font-weight: 100;
+  font-size: 20px;
+  text-decoration: line-through;
+}
+
+.explore .cards-container .content .enrolled {
+  font-family: 'Hind Gunter';
+  font-weight: 100;
+  font-size: 13px;
+  color: #fcdab7;
+}
+
+.explore .cards-container .content .enrolled i {
+  font-size: 12px;
+  color: #fcdab7;
+}
+
+.explore .cards-container .content .buy {
+  background-color: #133b5c;
+  color: #fcdab7;
+  padding: 8px 15px;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 3px 16px 1px rgba(0, 0, 0, 0.68);
+  box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.68);
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
 }
 /*# sourceMappingURL=style.css.map */
