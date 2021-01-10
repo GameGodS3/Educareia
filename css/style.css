@@ -385,6 +385,16 @@ body {
   }
 }
 
+#explore {
+  min-height: 13vh;
+}
+
+@media (max-width: 676px) {
+  #explore {
+    min-height: 0vh !important;
+  }
+}
+
 .explore {
   margin-top: 20px;
   padding: 0 30px;
