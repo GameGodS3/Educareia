@@ -265,6 +265,7 @@ body {
 }
 
 .progress .progress-container .progress-card .course-title {
+  color: var(--pri);
   font-weight: bold;
   white-space: pre-line;
   margin-top: -20px;
@@ -317,6 +318,7 @@ body {
 }
 
 .progress .progress-container .progress-card .on-hover .course-title-hover {
+  color: var(--pri);
   position: absolute;
   bottom: 130px;
   font-size: 1.6rem;
@@ -329,6 +331,7 @@ body {
 }
 
 .progress .progress-container .progress-card .on-hover .course-author-hover {
+  color: var(--pri);
   position: absolute;
   bottom: 100px;
   font-size: 1.3rem;
@@ -341,6 +344,7 @@ body {
 }
 
 .progress .progress-container .progress-card .on-hover .progress-per {
+  color: var(--acc);
   height: 15px;
   border-radius: 20px;
   background-color: white;
@@ -354,8 +358,8 @@ body {
 }
 
 .progress .progress-container .progress-card .on-hover .continue button {
-  background-color: var(--sec);
-  color: var(--darkacc);
+  background-color: var(--acc);
+  color: var(--pri);
   padding: 10px 20px;
   font-size: 20px;
   outline: none;
