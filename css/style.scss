@@ -4,6 +4,32 @@
     margin: 0;
     padding: 0;
 }
+
+/*animations*/
+@keyframes ascend{
+    from{margin-top: 50px; opacity: 0;}
+    to{margin-top: 30px; opacity: 1;}
+}
+@keyframes settle{
+    from{transform: translate(15px); opacity: 0;}
+    to{transform: translate(0); opacity: 1;}
+}
+@keyframes softpop{
+    from{transform: scale(0.8); opacity: 0;}
+    to{transform: scale(1); opacity: 1;}
+}
+#ascend{
+    animation: ascend .5s forwards;
+    animation-delay: .5s;
+}
+#softpop{
+    animation: softpop .5s forwards;
+    animation-delay: .5s;
+}
+.settle{
+    animation: settle .5s forwards;
+}
+
 html {
     scroll-behavior: smooth;
     --pri:#E5E3E7;
@@ -62,24 +88,24 @@ body{
 
             
             &:hover{
-                color: var(--darkacc);
+                color: #fff;
             }
         }
         .get-started{
             background-color: var(--ter);
             font-weight: bolder;
             font-size: 16px;
-            color: var(--acc);
+            color: var(--pri);
             border-radius: 25px;
             padding: 15px 15px ;
 
             &:hover{
 
-                background-color: #1e5f74be;
+                background-color: #5f8acedc;
             }
 
             span{
-                color: var(--darkacc);
+                color: var(--pri);
              
             }
         }
@@ -288,6 +314,11 @@ body{
 
     
     .content{
+        /*for animation*/
+        margin-left: 15px;
+        opacity: 0;
+
+
         color: var(--acc);
         h1{
             font-family: 'Hind Guntur', sans-serif;
@@ -353,6 +384,8 @@ body{
     .image{
         width: fit-content;
         text-align: center;
+
+        opacity: 0;
         img{
             max-width: 90%;
             height: auto;

@@ -56,7 +56,7 @@
         <div class="content">
             <h1>Success is a <br> click away </h1>
             <p>Achieve more with certifications and degrees from courses by reknowned global universities and companies</p>
-            <a href="./signup.html"><button class="get-started">Join Now <span>- IT'S FREE</span></button></a>
+            <a href="./signup.html"><button class="get-started">Join Now <span style="color: var(--pri);">- IT'S FREE</span></button></a>
             <a href="#explore"><button class="get-started-course">View Courses</button></a>
         </div>
 
@@ -89,6 +89,16 @@
 
 
     <script>
+        window.onload = function () {
+            document.querySelector('.content').classList.add('settle');
+            document.querySelector('.image').id = 'softpop';
+        }
+        window.onscroll = function (){
+            var cardtop = parseInt(document.querySelector('.cards-container').getBoundingClientRect().top);
+            if(cardtop < this.screen.height*.75){
+                document.querySelector('.cards-container').id = 'ascend';
+            }
+        }
         async function getData() {
             let res = await fetch('./CourseData.json')
             let data = await res.json()

@@ -4,6 +4,99 @@
   padding: 0;
 }
 
+/*animations*/
+@-webkit-keyframes ascend {
+  from {
+    margin-top: 50px;
+    opacity: 0;
+  }
+  to {
+    margin-top: 30px;
+    opacity: 1;
+  }
+}
+@keyframes ascend {
+  from {
+    margin-top: 50px;
+    opacity: 0;
+  }
+  to {
+    margin-top: 30px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes settle {
+  from {
+    -webkit-transform: translate(15px);
+            transform: translate(15px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes settle {
+  from {
+    -webkit-transform: translate(15px);
+            transform: translate(15px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes softpop {
+  from {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes softpop {
+  from {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+#ascend {
+  -webkit-animation: ascend .5s forwards;
+          animation: ascend .5s forwards;
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+}
+
+#softpop {
+  -webkit-animation: softpop .5s forwards;
+          animation: softpop .5s forwards;
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+}
+
+.settle {
+  -webkit-animation: settle .5s forwards;
+          animation: settle .5s forwards;
+}
+
 html {
   scroll-behavior: smooth;
   --pri:#E5E3E7;
@@ -86,24 +179,24 @@ body {
 }
 
 .header ul li:hover {
-  color: var(--darkacc);
+  color: #fff;
 }
 
 .header ul .get-started {
   background-color: var(--ter);
   font-weight: bolder;
   font-size: 16px;
-  color: var(--acc);
+  color: var(--pri);
   border-radius: 25px;
   padding: 15px 15px;
 }
 
 .header ul .get-started:hover {
-  background-color: #1e5f74be;
+  background-color: #5f8acedc;
 }
 
 .header ul .get-started span {
-  color: var(--darkacc);
+  color: var(--pri);
 }
 
 .progress {
@@ -330,6 +423,9 @@ body {
 }
 
 .main .content {
+  /*for animation*/
+  margin-left: 15px;
+  opacity: 0;
   color: var(--acc);
 }
 
@@ -406,6 +502,7 @@ body {
   width: -moz-fit-content;
   width: fit-content;
   text-align: center;
+  opacity: 0;
 }
 
 .main .image img {
@@ -472,7 +569,8 @@ body {
 }
 
 .explore .cards-container {
-  margin-top: 30px;
+  margin-top: 50px;
+  opacity: 0;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
@@ -525,6 +623,7 @@ body {
 .explore .cards-container .course .discount {
   position: absolute;
   background-color: #eb4e54;
+  color: var(--pri);
   padding: 8px 20px;
   border-radius: 20px;
   font-weight: bold;
@@ -541,6 +640,7 @@ body {
 .explore .cards-container .content h1.title {
   display: -webkit-box;
   font-size: 24px;
+  color: var(--pri);
   font-family: 'Hind Guntur', sans-serif;
   font-weight: 300;
   line-height: 1.8rem;
@@ -565,6 +665,7 @@ body {
   font-family: "Hind Guntur";
   font-weight: bold;
   font-size: 30px;
+  color: #fff;
 }
 
 .explore .cards-container .content .price .original-price {
@@ -590,7 +691,7 @@ body {
 .explore .cards-container .content .buy {
   font-family: 'Hind Guntur';
   background-color: var(--acc);
-  color: var(--sec);
+  color: var(--pri);
   padding: 8px 15px;
   height: 40px;
   font-size: 16px;

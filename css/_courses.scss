@@ -34,7 +34,10 @@
    
 
     .cards-container{
-        margin-top: 30px;
+        //for animation
+        margin-top: 50px;
+        opacity: 0;
+        
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 30px;
@@ -72,6 +75,7 @@
             .discount{
                 position: absolute;
                 background-color: #eb4e54;
+                color: var(--pri);
                 padding: 8px 20px;
                 border-radius: 20px;
                 font-weight: bold;
@@ -90,6 +94,7 @@
             h1.title{
                 display: -webkit-box;
                 font-size: 24px;
+                color:var(--pri);
                 font-family: 'Hind Guntur', sans-serif;;
                 font-weight: 300;
                 line-height: 1.8rem;
@@ -112,6 +117,7 @@
                 font-family: "Hind Guntur";
                 font-weight: bold;
                 font-size: 30px;
+                color: #fff;
 
                 .original-price{
                     color: var(--acc);
@@ -137,7 +143,7 @@
             .buy{
                 font-family: 'Hind Guntur';
                 background-color: var(--acc);
-                color: var(--sec);
+                color: var(--pri);
                 padding: 8px 15px;
                 height: 40px;
                 font-size: 16px;
