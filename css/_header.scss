@@ -1,0 +1,104 @@
+.header{
+    z-index: 100;
+    position: sticky;
+    top: 0px;
+    height: 14vh;
+    background-color: var(--sec);
+    padding: 0 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    @media(max-width: 676px){
+        flex-direction: column;
+        background-color: var(--sec);
+        height: 13vh;
+    }
+   
+    h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Montserrat', sans-serif;
+        color: var(--acc);
+        font-size: 55px;
+
+        @media(max-width: 676px){
+            display: none;
+        }
+    }
+    ul{ 
+        
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        align-items: center;
+        font-weight: bolder;
+        font-family: 'Montserrat', sans-serif;
+
+        @media(max-width: 676px){
+            
+            flex-direction: column;
+            align-items: flex-start;
+            display: none;
+            
+        }
+        
+        cursor: pointer;
+        a{
+            text-decoration: none;
+        }
+        li{
+            transition: all 0.2s ease;
+            padding: 15px 30px;
+            font-size: 16px;
+            color: var(--acc);
+            font-style: italic;
+            font-weight: bold;
+
+            @media(max-width: 676px){
+            
+                flex-direction: column;
+                align-items: flex-start;
+                display: none;
+                
+            }
+
+            
+            &:hover{
+                color: #fff;
+            }
+        }
+        
+        .get-started{
+            background-color: var(--ter);
+            font-weight: bolder;
+            font-size: 16px;
+            color: var(--acc);
+            border-radius: 25px;
+            padding: 15px 15px ;
+
+            &:hover{
+
+                background-color: #1e5f74be;
+            }
+
+            span{
+                color: #fff;
+             
+            }
+        }
+        
+    }
+
+    i{
+        color: var(--acc);
+        position: absolute;
+        right: 10px;
+        top: 20px;
+        font-size: 40px;
+    }
+
+    
+
+}

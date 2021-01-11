@@ -411,3 +411,136 @@ body{
 
 @import './courses';
 @import './login';
+
+.cards-container{
+    //for animation
+    margin-top: 50px;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+   
+
+    @media(max-width: 676px) {
+        grid-template-columns: 1fr;
+    }
+    
+    .course{
+        
+        background-color: var(--ter);
+        border-radius: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;       
+        position: relative;  
+        @media(max-width: 676px) {
+            grid-template-columns: 1fr;
+        }   
+        .image{
+            height: 18rem;
+            
+            img{
+                width: 100%;
+                height: 18rem;
+                object-fit: cover;
+                border-radius: 20px 0 0 20px;
+
+                @media(max-width: 676px) {
+                    border-radius: 20px 20px 0 0 ;
+                } 
+            }
+            
+        }
+
+        .discount{
+            position: absolute;
+            background-color: #eb4e54;
+            color: var(--pri);
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+           
+            top: 5px;
+            left: 10px;
+           
+            
+        }
+    }
+    .content{
+        background-color: var(--ter);
+        border-radius: 0 20px 20px 0 ;
+        padding: 10px;
+
+        h1.title{
+            display: -webkit-box;
+            font-size: 24px;
+            color:var(--pri);
+            font-family: 'Hind Guntur', sans-serif;;
+            font-weight: 300;
+            line-height: 1.8rem;
+            width: 70%;
+            overflow: hidden;
+            line-clamp: 4;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+        }
+        .rating{
+            i{
+                margin: 0 2px;
+            }
+            .yellow-star{
+                filter: brightness(0) saturate(100%) invert(88%) sepia(38%) saturate(1403%) hue-rotate(318deg) brightness(129%) contrast(110%);
+            }
+        }
+        .price{
+            margin-top: 5px;
+            font-family: "Hind Guntur";
+            font-weight: bold;
+            font-size: 30px;
+            color: #fff;
+
+            .original-price{
+                color: var(--acc);
+                opacity: .7;
+                font-weight: 100;
+                font-size: 20px;
+                text-decoration: line-through;
+            }
+
+        }
+        .enrolled{
+            font-family: 'Hind Guntur';
+            font-weight: 100;
+            font-size: 13px;
+            color: var(--acc);
+            i{
+                font-size: 12px;
+                color: var(--acc);
+                
+            }
+        }
+
+        .buy{
+            font-family: 'Hind Guntur';
+            background-color: var(--acc);
+            color: var(--pri);
+            padding: 8px 15px;
+            height: 40px;
+            font-size: 16px;
+            font-weight: bold;
+            outline: none;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); 
+            box-shadow:5px 5px 15px rgba(0, 0, 0, 0.2);
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+            &:hover{
+                -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4); 
+                box-shadow:5px 5px 15px rgba(0, 0, 0, 0.4);
+                transition: .25s;
+            }
+        }
+    }
+}
